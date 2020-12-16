@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    
+    <head>
+        <meta charset="UTF-8">
+        <title>PHP7开发从入门到放弃！ - 融职教育</title>
+        <meta name="keywords" content="php,html,css,js">
+        <meta name="description" content="培养可交付的PHP程序员">
+        <link rel="stylesheet" type="text/css" href="./css/base.css">
+        <link rel="stylesheet" type="text/css" href="./css/style.css">
+        <link rel="stylesheet" type="text/css" href="./css/fonts/iconfont.css">
+        <link rel="stylesheet" type="text/css" href="./css/editor.css"></head>
+    
+    <body>
+        <header id="header" class="header b-b shadow">
+            <div class="top-nav w-1200 m-auto">
+                <a href="./index.html" class="logo fl">
+                    <img src="./img/logo.png" alt=""></a>
+                <div class="menu">
+                    <ul>
+                        <li>
+                            <a href="./index.html">网站首页</a></li>
+                        <li>
+                            <a href="./echo_log.html">文章页面</a></li>
+                        <li class="children">
+                            <a href="">二级菜单</a>
+                            <ul class="sub-nav shadow">
+                                <li>
+                                    <a href="">二级菜单</a></li>
+                                <li>
+                                    <a href="">二级菜单</a></li>
+                                <li>
+                                    <a href="">二级菜单</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="./log_list.html">文章列表</a></li>
+                    </ul>
+                </div>
+                <div class="header-tool fr">
+                    <a href="./login.html" title="">登录</a>&nbsp;&nbsp;
+                    <a href="./reg.html" title="">注册</a></div>
+            </div>
+        </header>
+        <!-- /header -->
+        <div class="main w-1200 m-auto">
+            <div class="ad w-1200 b-rad">
+                <a href="" title="">
+                    <img src="./img/ad.jpg" alt=""></a>
+            </div>
+            <div class="posts-title">PHP7开发从入门到放弃！</div>
+            <div class="posts-info">作者：王德发 | 所属分类：PHP开发 | 发表时间：2020-12-14</div>
+            <div class="posts-main fl">
+                <div class="content b-a b-rad">
+                    <div id="tinymce-editor" class="entry-content">
+                        <p>作者：爱前端不爱恋爱
+                            <br>链接：https://zhuanlan.zhihu.com/p/270528308
+                            <br>来源：知乎
+                            <br>著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+                            <br>
+                            <br></p>
+                        <div>
+                            <p>有一些CSS的冷门样式太多了，但是又想记住，可以看这篇文章，这篇文章包括了一些css需要记忆的一些属性，不包括平时经常使用的（相信你已经接触的太多了）</p>
+                            <figure data-size="normal">
+                                <img class="origin_image zh-lightbox-thumb" src="https://pic1.zhimg.com/v2-a363af1c74d1f3eb645edc3d112c506c_b.jpg" width="546" data-caption="" data-size="normal" data-rawwidth="546" data-rawheight="301" data-original="https://pic1.zhimg.com/v2-a363af1c74d1f3eb645edc3d112c506c_r.jpg"></figure>
+                            <h2>
+                                <strong>伪类选择器</strong></h2>
+                            <figure data-size="normal">
+                                <img class="origin_image zh-lightbox-thumb" src="https://pic1.zhimg.com/v2-aeaa858069b2331f23b8d75ffa96e1a0_b.jpg" width="581" data-caption="" data-size="normal" data-rawwidth="581" data-rawheight="154" data-original="https://pic1.zhimg.com/v2-aeaa858069b2331f23b8d75ffa96e1a0_r.jpg"></figure>
+                            <h2>
+                                <strong>文字阴影</strong></h2>
+                            <p>简写：
+                                <br>text-shadow:水平位置 垂直位置 模糊距离 阴影颜色;</p>
+                            <blockquote>text-indent：首行缩进 ;
+                                <br>word-spacing: 单词间距;
+                                <br>letter-spacing:字间距;</blockquote>
+                            <h2>
+                                <strong>link答疑</strong></h2>
+                            <p>
+                                <code>type="text/css"</code>在link中可以忽略不写，写了比较规范,rel定义当前文档和被链接文档之间的关系，在这里需要指定为
+                                <code>“stylesheet”</code>，表示被链接的文档是一个样式文件</p>
+                            <h2>
+                                <strong>行内元素&amp;块级元素</strong></h2>
+                            <p>
+                                <strong>行内元素</strong>：高宽无效，
+                                <strong>水平的
+                                    <code>padding</code>和
+                                    <code>margin</code>有效</strong>，但垂直方向无效</p>
+                            <p>常见的行内元素：
+                                <code>&lt;a&gt; &lt;strong&gt; &lt;b&gt; &lt;i&gt; &lt;del&gt; &lt;s&gt; &lt;ins&gt; &lt;u&gt; &lt;span&gt;</code></p>
+                            <p>
+                                <strong>块级元素</strong>：高宽有效，都可以自定义</p>
+                            <p class="ztext-empty-paragraph">&nbsp;</p>
+                            <h2>选择器</h2>
+                            <p>
+                                <strong>交集选择器</strong></p>
+                            <div class="highlight">
+                                <pre>
+                                    <code class="language-css">
+                                        <span class="nt">p</span>
+                                        <span class="p">.</span>
+                                        <span class="nc">one</span>
+                                        <span class="p">{</span>
+                                        <span class="k">color</span>
+                                        <span class="p">:</span>
+                                        <span class="kc">red</span>
+                                        <span class="p">;</span>
+                                        <span class="k">font-size</span>
+                                        <span class="p">:</span>
+                                        <span class="mi">14</span>
+                                        <span class="kt">px</span>
+                                        <span class="p">;}</span></code>
+                                </pre>
+                            </div>
+                            <p>是“即...又...的意思”，
+                                <code>p.one</code>选择的是类名为
+                                <code>.one</code>的 段落标签</p>
+                            <p>
+                                <strong>并集选择器(逗号分割)</strong></p>
+                            <div class="highlight">
+                                <pre>
+                                    <code class="language-css">
+                                        <span class="p">.</span>
+                                        <span class="nc">one</span>
+                                        <span class="o">,</span>
+                                        <span class="nt">p</span>
+                                        <span class="o">,</span>
+                                        <span class="p">#</span>
+                                        <span class="nn">test</span>
+                                        <span class="p">{</span>
+                                        <span class="k">color</span>
+                                        <span class="p">:</span>
+                                        <span class="kc">red</span>
+                                        <span class="p">;}</span></code>
+                                </pre>
+                            </div>
+                            <p>
+                                <strong>伪元素选择器</strong></p>
+                            <p>
+                                <code>E::first-letter</code>文本的第一个单纯或字</p>
+                            <p>
+                                <code>E::first-line</code>文本第一行</p>
+                            <p>
+                                <code>E::selection</code>改变文本选中的样式（有点好用）</p>
+                            <p>
+                                <code>E::befor和E::after</code>该元素是行内元素 结合
+                                <code>content</code>使用</p>
+                            <blockquote>“:”和“::”在于区分伪类和伪元素</blockquote>
+                            <h2>背景（background）</h2>
+                            <div class="highlight">
+                                <pre>
+                                    <code class="language-css">
+                                        <span class="nt">background-image</span>
+                                        <span class="p">:</span>
+                                        <span class="nd">none</span>
+                                        <span class="o">/</span>
+                                        <span class="nt">url</span>
+                                        <span class="o">(</span>
+                                        <span class="nt">url</span>
+                                        <span class="o">)</span></code>
+                                </pre>
+                            </div>
+                            <figure data-size="normal">
+                                <img class="origin_image zh-lightbox-thumb" src="https://pic4.zhimg.com/v2-ecce3bb75e7974f3c683112f61a9f357_b.jpg" width="583" data-caption="" data-size="normal" data-rawwidth="583" data-rawheight="604" data-original="https://pic4.zhimg.com/v2-ecce3bb75e7974f3c683112f61a9f357_r.jpg"></figure>
+                            <p>一般使用习惯(参考):</p>
+                            <div class="highlight">
+                                <pre>
+                                    <code class="language-css">
+                                        <span class="p">.</span>
+                                        <span class="nc">img</span>
+                                        <span class="p">{</span>
+                                        <span class="k">width</span>
+                                        <span class="p">:</span>
+                                        <span class="mi">400</span>
+                                        <span class="kt">px</span>
+                                        <span class="p">;</span>
+                                        <span class="k">height</span>
+                                        <span class="p">:</span>
+                                        <span class="mi">400</span>
+                                        <span class="kt">px</span>
+                                        <span class="p">;</span>
+                                        <span class="k">border</span>
+                                        <span class="p">:</span>
+                                        <span class="mi">1</span>
+                                        <span class="kt">px</span>
+                                        <span class="kc">solid</span>
+                                        <span class="mh">#fff</span>
+                                        <span class="p">;</span>
+                                        <span class="k">background</span>
+                                        <span class="p">:</span>
+                                        <span class="mh">#fff</span>
+                                        <span class="nb">url</span>
+                                        <span class="p">(</span>
+                                        <span class="sx">1111.jpg</span>
+                                        <span class="p">)</span>
+                                        <span class="kc">no-repeat</span>
+                                        <span class="p">;</span>
+                                        <span class="k">background-position</span>
+                                        <span class="p">:</span>
+                                        <span class="mi">30</span>
+                                        <span class="kt">px</span>
+                                        <span class="mi">50</span>
+                                        <span class="kt">px</span>
+                                        <span class="p">;</span>
+                                        <span class="k">background-size</span>
+                                        <span class="p">:</span>
+                                        <span class="mi">200</span>
+                                        <span class="kt">px</span>
+                                        <span class="mi">210</span>
+                                        <span class="kt">px</span>
+                                        <span class="p">;</span>
+                                        <span class="p">}</span></code>
+                                </pre>
+                            </div>
+                            <h2>文本修饰</h2>
+                            <div class="highlight">
+                                <pre>
+                                    <code class="language-css">
+                                        <span class="err">`</span>
+                                        <span class="nt">text-decoration</span>
+                                        <span class="err">`</span>
+                                        <span class="nt">修饰文本</span></code>
+                                </pre>
+                            </div>
+                            <figure data-size="normal">
+                                <img class="origin_image zh-lightbox-thumb" src="https://pic1.zhimg.com/v2-ac31279b28827ec7ae8edd61cf245ccc_b.jpg" width="580" data-caption="" data-size="normal" data-rawwidth="580" data-rawheight="190" data-original="https://pic1.zhimg.com/v2-ac31279b28827ec7ae8edd61cf245ccc_r.jpg"></figure>
+                            <h2>盒子模型</h2>
+                            <p>应该都比较熟悉，只讲几个比较容易忘记的属性</p>
+                            <p>
+                                <strong>border-style</strong></p>
+                            <figure data-size="normal">
+                                <img class="origin_image zh-lightbox-thumb" src="https://pic4.zhimg.com/v2-c388eaf5672119d51fb69217c1fc5ba7_b.jpg" width="579" data-caption="" data-size="normal" data-rawwidth="579" data-rawheight="232" data-original="https://pic4.zhimg.com/v2-c388eaf5672119d51fb69217c1fc5ba7_r.jpg"></figure>
+                            <p>
+                                <strong>表格table的边框</strong></p>
+                            <p>
+                                <code>table{border-collapse:collapse;}</code>`collapse`单词是合并的意思。表示边框合并在一起</p>
+                            <p>
+                                <strong>外边距实现盒子居中</strong></p>
+                            <p>可以让一个盒子实现水平居中：</p>
+                            <div class="highlight">
+                                <pre>
+                                    <code class="language-css">
+                                        <span class="p">.</span>
+                                        <span class="nc">header</span>
+                                        <span class="p">{</span>
+                                        <span class="k">width</span>
+                                        <span class="p">:</span>
+                                        <span class="mi">960</span>
+                                        <span class="kt">px</span>
+                                        <span class="p">;</span>
+                                        <span class="k">margin</span>
+                                        <span class="p">:</span>
+                                        <span class="mi">0</span>
+                                        <span class="kc">auto</span>
+                                        <span class="p">;}</span></code>
+                                </pre>
+                            </div>
+                            <blockquote>文字居中:
+                                <code>text-align:center;</code></blockquote>
+                            <p>
+                                <strong>相邻块元素垂直外边距的合并（容易出现的bug）</strong></p>
+                            <p>1.上下相邻的元素，上:
+                                <code>margin-bottom</code>，下:
+                                <code>margin-top</code>,会发生合并（外边距塌陷），合并的边距值等于其中大的那者</p>
+                            <figure data-size="normal">
+                                <img class="origin_image zh-lightbox-thumb" src="https://pic4.zhimg.com/v2-1cbee252561e501b10af54ea91bd645b_b.jpg" width="800" data-caption="" data-size="normal" data-rawwidth="800" data-rawheight="504" data-original="https://pic4.zhimg.com/v2-1cbee252561e501b10af54ea91bd645b_r.jpg"></figure>
+                            <p>解决方法：避免</p>
+                            <p>2.嵌套元素垂直外边距的合并</p>
+                            <figure data-size="normal">
+                                <img class="origin_image zh-lightbox-thumb" src="https://pic4.zhimg.com/v2-8681c9c7a8f6436e045090ba94c3fdb7_b.jpg" width="800" data-caption="" data-size="normal" data-rawwidth="800" data-rawheight="316" data-original="https://pic4.zhimg.com/v2-8681c9c7a8f6436e045090ba94c3fdb7_r.jpg"></figure>
+                            <p>
+                                <strong>解决方案：</strong>
+                                <br>1.为父元素定义1像素的上边框
+                                <br>2.可以为父元素添加:
+                                <code>overflow:hidden</code>（触发BFC）</p>
+                            <p>
+                                <strong>CSS盒模型</strong></p>
+                            <p>
+                                <code>box-sizing:content-box</code>;默认</p>
+                            <p>
+                                <code>box-sizing:border-box</code>;盒子大小为
+                                <code>width</code>，也就是说
+                                <code>padding</code>和
+                                <code>border</code>都包含到了
+                                <code>width</code>里面</p>
+                            <p>
+                                <strong>盒子阴影</strong></p>
+                            <p>
+                                <code>box-shadow:水平 垂直 模糊距离 阴影尺寸 颜色 内/外阴影;</code></p>
+                            <blockquote>想要内阴影就用inset</blockquote>
+                            <p>实际用法:
+                                <code>box-shadow:0 15px 30px rgba(0,0,0,.4);</code></p>
+                            <h2>CSS定位</h2>
+                            <p>CSS的定位机制有三种:
+                                <strong>普通流（标准流</strong>）、
+                                <strong>浮动</strong>、
+                                <strong>定位</strong></p>
+                            <h3>清除浮动</h3>
+                            <p>解决父级元素因为子浮动引起的内部高度为0的问题
+                                <br>应用场景：比如文章，做瀑布流布局等等，很多时候我们不需要给父盒子高度，因为比如文章的内容你是无法估量其高度的，我们需要自适应地撑开盒子。所以才会清除浮动。</p>
+                            <p>
+                                <strong>解决方法：</strong></p>
+                            <p>1.选择器
+                                <code>{clear:both;}</code></p>
+                            <p>2.父级添加
+                                <code>overflow:hidden;</code>，触发BFC的方式实现清除浮动效果</p>
+                            <p>3.
+                                <code>:after</code>案例：百度 淘宝网 网易</p>
+                            <div class="highlight">
+                                <pre>
+                                    <code class="language-css">
+                                        <span class="p">.</span>
+                                        <span class="nc">clearfix</span>
+                                        <span class="p">::</span>
+                                        <span class="nd">after</span>
+                                        <span class="p">{</span>
+                                        <span class="k">content</span>
+                                        <span class="p">:</span>
+                                        <span class="s2">"."</span>
+                                        <span class="p">;</span>
+                                        <span class="k">display</span>
+                                        <span class="p">:</span>
+                                        <span class="kc">block</span>
+                                        <span class="p">;</span>
+                                        <span class="k">height</span>
+                                        <span class="p">:</span>
+                                        <span class="mi">0</span>
+                                        <span class="p">;</span>
+                                        <span class="k">clear</span>
+                                        <span class="p">:</span>
+                                        <span class="kc">both</span>
+                                        <span class="p">;</span>
+                                        <span class="k">visibility</span>
+                                        <span class="p">:</span>
+                                        <span class="kc">hidden</span>
+                                        <span class="p">;</span>
+                                        <span class="p">}</span>
+                                        <span class="p">.</span>
+                                        <span class="nc">clearfix</span>
+                                        <span class="p">{</span>
+                                        <span class="err">*</span>
+                                        <span class="n">zoom</span>
+                                        <span class="p">:</span>
+                                        <span class="mi">1</span>
+                                        <span class="p">;</span>
+                                        <span class="p">}</span></code>
+                                </pre>
+                            </div>
+                            <p>4.
+                                <code>before</code>和
+                                <code>afte</code>r 案例：小米 腾讯 代码更简洁</p>
+                            <div class="highlight">
+                                <pre>
+                                    <code class="language-css">
+                                        <span class="p">.</span>
+                                        <span class="nc">clearfix</span>
+                                        <span class="p">::</span>
+                                        <span class="nd">after</span>
+                                        <span class="o">,</span>
+                                        <span class="p">.</span>
+                                        <span class="nc">clearfix</span>
+                                        <span class="p">:</span>
+                                        <span class="nd">before</span>
+                                        <span class="p">{</span>
+                                        <span class="k">content</span>
+                                        <span class="p">:</span>
+                                        <span class="s2">"."</span>
+                                        <span class="p">;</span>
+                                        <span class="k">display</span>
+                                        <span class="p">:</span>
+                                        <span class="kc">table</span>
+                                        <span class="p">;</span>
+                                        <span class="c">/* 这句话可以触发BFC */</span>
+                                        <span class="p">}</span>
+                                        <span class="p">.</span>
+                                        <span class="nc">clearfix</span>
+                                        <span class="p">::</span>
+                                        <span class="nd">after</span>
+                                        <span class="p">{</span>
+                                        <span class="k">clear</span>
+                                        <span class="p">:</span>
+                                        <span class="kc">both</span>
+                                        <span class="p">;</span>
+                                        <span class="p">}</span>
+                                        <span class="p">.</span>
+                                        <span class="nc">clearfix</span>
+                                        <span class="p">{</span>
+                                        <span class="err">*</span>
+                                        <span class="n">zoom</span>
+                                        <span class="p">:</span>
+                                        <span class="mi">1</span>
+                                        <span class="p">;</span>
+                                        <span class="p">}</span></code>
+                                </pre>
+                            </div>
+                            <blockquote>给父盒子的
+                                <code>class</code>属性添加
+                                <code>clearfix</code>就可以使用了</blockquote>
+                            <h2>定位</h2>
+                            <figure data-size="normal">
+                                <img class="origin_image zh-lightbox-thumb" src="https://pic3.zhimg.com/v2-933c7e9ba34ff7b434729f77dd8310ee_b.jpg" width="582" data-caption="" data-size="normal" data-rawwidth="582" data-rawheight="252" data-original="https://pic3.zhimg.com/v2-933c7e9ba34ff7b434729f77dd8310ee_r.jpg"></figure>
+                            <blockquote>Tip:“子绝父相”牢记于心</blockquote>
+                            <p>
+                                <strong>绝对定位中的盒子水平/垂直居中</strong></p>
+                            <blockquote>绝对定位的盒子
+                                <code>margin</code>无效</blockquote>
+                            <p>解决方法:</p>
+                            <ol>
+                                <li>
+                                    <code>left:50%</code></li>
+                                <li>走自己外边距负的一半:
+                                    <code>margin-left</code></li>
+                            </ol>
+                            <p>
+                                <strong>z-index</strong></p>
+                            <p>默认是0，属性越大，定位元素位置越居上。</p>
+                            <blockquote>只有
+                                <code>relative,absolute,fixed</code>可以使用这个属性</blockquote>
+                            <h2>
+                                <strong>元素的显示隐藏</strong></h2>
+                            <p>
+                                <code>overflow display visibility</code>比较常见</p>
+                            <p>
+                                <strong>display</strong></p>
+                            <figure data-size="normal">
+                                <img class="origin_image zh-lightbox-thumb" src="https://pic1.zhimg.com/v2-28c65e0fbab34f8e91430fd29f37fda0_b.jpg" width="571" data-caption="" data-size="normal" data-rawwidth="571" data-rawheight="76" data-original="https://pic1.zhimg.com/v2-28c65e0fbab34f8e91430fd29f37fda0_r.jpg"></figure>
+                            <p>
+                                <strong>visibility</strong></p>
+                            <figure data-size="normal">
+                                <img class="origin_image zh-lightbox-thumb" src="https://pic3.zhimg.com/v2-054d49429614e6c9046751fc7223bcf6_b.jpg" width="578" data-caption="" data-size="normal" data-rawwidth="578" data-rawheight="75" data-original="https://pic3.zhimg.com/v2-054d49429614e6c9046751fc7223bcf6_r.jpg"></figure>
+                            <p>
+                                <strong>overflow</strong></p>
+                            <figure data-size="normal">
+                                <img class="origin_image zh-lightbox-thumb" src="https://pic1.zhimg.com/v2-283aca06bb7e99860383b5f553e09af4_b.jpg" width="577" data-caption="" data-size="normal" data-rawwidth="577" data-rawheight="114" data-original="https://pic1.zhimg.com/v2-283aca06bb7e99860383b5f553e09af4_r.jpg"></figure>
+                            <h2>CSS高级技巧</h2>
+                            <p>
+                                <strong>鼠标cursor</strong></p>
+                            <div class="highlight">
+                                <pre>
+                                    <code class="language-text">cursor:default 小白 | pointer 小手 | move 移动 | text 文本;</code></pre>
+                            </div>
+                            <blockquote>尽量不要用
+                                <code>hand</code>，火狐不支持
+                                <br>
+                                <code>pointer</code>： ie6以上支持</blockquote>
+                            <p>
+                                <strong>轮廓outline</strong></p>
+                            <div class="highlight">
+                                <pre>
+                                    <code class="language-css">
+                                        <span class="nt">outline</span>
+                                        <span class="p">:</span>
+                                        <span class="nd">outline-color</span>
+                                        <span class="o">||</span>
+                                        <span class="nt">outline-style</span>
+                                        <span class="o">||</span>
+                                        <span class="nt">outline-width</span></code>
+                                </pre>
+                            </div>
+                            <p>一般不会关心设置多少，去掉就好:
+                                <code>outline:0</code>;或
+                                <code>outline:none;</code>
+                                <br>（比如在点击表单input时候会默认有一个黑色轮廓，我们可以去掉，也可以用
+                                <code>outline-color: red;</code>改变轮廓颜色）</p>
+                            <p>
+                                <strong>防止拖拽文本域resize</strong></p>
+                            <figure data-size="normal">
+                                <img class="content_image" src="https://pic3.zhimg.com/v2-8ebfbbcf93177242df2cea4292adbe52_b.jpg" width="368" data-caption="" data-size="normal" data-rawwidth="368" data-rawheight="235"></figure>
+                            <p class="ztext-empty-paragraph">&nbsp;</p>
+                            <p>
+                                <code>resize:none</code>可以防止 火狐 谷歌 等浏览器随意拖拽
+                                <code>textarea</code>破坏布局</p>
+                            <p>
+                                <strong>vertical-align垂直对齐</strong></p>
+                            <p>它不影响块级元素的内容对齐，只针对行内和行内块元素，
+                                <strong>通常用来控制图片/表单与文字的对齐</strong></p>
+                            <blockquote>MDN文档讲述这个属性很棒：
+                                <br>链接：[
+                                <a href="https://link.zhihu.com/?target=https%3A//developer.mozilla.org/zh-CN/docs/Web/CSS/vertical-align" class=" external" target="_blank" rel="nofollow noopener noreferrer" data-za-detail-view-id="1043">
+                                    <span class="invisible">https://</span>
+                                    <span class="visible">developer.mozilla.org/z</span>
+                                    <span class="invisible">h-CN/docs/Web/CSS/vertical-align</span></a>](
+                                <a href="https://link.zhihu.com/?target=https%3A//developer.mozilla.org/zh-CN/docs/Web/CSS/vertical-align" class=" external" target="_blank" rel="nofollow noopener noreferrer" data-za-detail-view-id="1043">
+                                    <span class="invisible">https://</span>
+                                    <span class="visible">developer.mozilla.org/z</span>
+                                    <span class="invisible">h-CN/docs/Web/CSS/vertical-align</span></a>)</blockquote>
+                            <p>
+                                <strong>去除图片底侧空白缝隙</strong></p>
+                            <p>图片或表单等行内元素，它的底线和父级盒子的基线对齐。这样会造成一个问题，图片底侧会有一个空白缝隙。</p>
+                            <p>
+                                <strong>解决方法：</strong></p>
+                            <ol>
+                                <li>给img
+                                    <code>vertical-align:middle | top;</code>等等。让图片不要和基线对齐</li>
+                                <li>给img添加
+                                    <code>display:block;</code></li>
+                            </ol>
+                            <h2>溢出的文字隐藏</h2>
+                            <p>
+                                <strong>word-break</strong></p>
+                            <p>主要处理英文单词</p>
+                            <figure data-size="normal">
+                                <img class="origin_image zh-lightbox-thumb" src="https://pic3.zhimg.com/v2-785622c3131f84c87f9f7ba63c17577e_b.jpg" width="583" data-caption="" data-size="normal" data-rawwidth="583" data-rawheight="153" data-original="https://pic3.zhimg.com/v2-785622c3131f84c87f9f7ba63c17577e_r.jpg"></figure>
+                            <p>
+                                <strong>white-space</strong></p>
+                            <figure data-size="normal">
+                                <img class="origin_image zh-lightbox-thumb" src="https://pic3.zhimg.com/v2-ae5b4009d371c0f6089c0a48b4bde28a_b.jpg" width="582" data-caption="" data-size="normal" data-rawwidth="582" data-rawheight="134" data-original="https://pic3.zhimg.com/v2-ae5b4009d371c0f6089c0a48b4bde28a_r.jpg"></figure>
+                            <p>
+                                <strong>text-overflow文字溢出</strong></p>
+                            <p>设置一个省略标记（...）显示文本的溢出</p>
+                            <figure data-size="normal">
+                                <img class="origin_image zh-lightbox-thumb" src="https://pic1.zhimg.com/v2-710331147d32e7164035241754a1f1b0_b.jpg" width="576" data-caption="" data-size="normal" data-rawwidth="576" data-rawheight="113" data-original="https://pic1.zhimg.com/v2-710331147d32e7164035241754a1f1b0_r.jpg"></figure>
+                            <blockquote>注意首先要强制一行内显示，然后搭配
+                                <code>overflow:hidden;</code>使用</blockquote>
+                            <h3>CSS精灵图</h3>
+                            <p>很多图片集合到一张内，
+                                <strong>减少服务器接受和发送请求的次数，提高页面加载速度</strong></p>
+                            <p>使用:用到CSS的
+                                <code>background-image</code>,
+                                <code>background-repeat</code>,
+                                <code>background-position</code>进行背景定位，也可以简写操作</p>
+                            <h3>字体图标iconfont</h3>
+                            <p>优点：有文字的属性，体积小，几乎支持所有浏览器，移动端必备</p>
+                            <p>格式：.svg</p>
+                            <p>程序员推荐图标字体网站：
+                                <a href="https://link.zhihu.com/?target=http%3A//icomoon.io/" class=" wrap external" target="_blank" rel="nofollow noopener noreferrer" data-za-detail-view-id="1043">http://icomoon.io（iconmoon</a>字库，允许用户自定义选择图标使它们生成字型，种类很多，国外网站打开速度比较慢）</p>
+                            <p>
+                                <strong>如何引入</strong>？</p>
+                            <ol>
+                                <li>创建fonts文件夹，里面包含了字体文件</li>
+                                <li>在样式内声明字体
+                                    <br>@font-face {
+                                    <em>/* 声明字体 */</em>font-family: 'icomoon';
+                                    <em>/* 自己声明的字体包 */</em>src: url('../fonts/icomoon.eot?8qhwk5');
+                                    <em>/* 路径 */</em>src: url('../fonts/icomoon.eot?8qhwk5#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?8qhwk5') format('truetype'), url('../fonts/icomoon.woff?8qhwk5') format('woff'), url('../fonts/icomoon.svg?8qhwk5#icomoon') format('svg'); font-weight: normal; font-style: normal; }</li>
+                                <li>给盒子使用字体
+                                    <br>font-family:"icomoon";</li>
+                                <li>盒子里添加结构
+                                    <br>span::before{ content:"\e900"; } 或者 &lt;span&gt;□&lt;span&gt;
+                                    <em>/* □是从网站复制过来的（无法看见）*/</em></li>
+                            </ol>
+                            <h3>滑动门技术</h3>
+                            <figure data-size="normal">
+                                <img class="origin_image zh-lightbox-thumb" src="https://pic4.zhimg.com/v2-7e98d760af953d352d22ad84ef4af3b3_b.jpg" width="800" data-caption="" data-size="normal" data-rawwidth="800" data-rawheight="312" data-original="https://pic4.zhimg.com/v2-7e98d760af953d352d22ad84ef4af3b3_r.jpg"></figure>
+                            <p>设置导航栏时候，字数不一样多，比如图里的，怎么适应内部的文本内容呢？</p>
+                            <figure data-size="normal">
+                                <img class="content_image" src="https://pic4.zhimg.com/v2-002645a657092954262585e06d8f8917_b.jpg" width="211" data-caption="" data-size="normal" data-rawwidth="211" data-rawheight="72"></figure>
+                            <p>方法：利用CSS（背景位置）和盒子padding撑开宽度。</p>
+                            <figure data-size="normal">
+                                <img class="origin_image zh-lightbox-thumb" src="https://pic3.zhimg.com/v2-be57684621819d5b5b798fa603117d66_b.jpg" width="730" data-caption="" data-size="normal" data-rawwidth="730" data-rawheight="356" data-original="https://pic3.zhimg.com/v2-be57684621819d5b5b798fa603117d66_r.jpg"></figure>
+                            <div class="highlight">
+                                <pre>
+                                    <code class="language-css">
+                                        <span class="o">&lt;</span>
+                                        <span class="nt">li</span>
+                                        <span class="o">&gt;</span>
+                                        <span class="o">&lt;</span>
+                                        <span class="nt">li</span>
+                                        <span class="o">&gt;</span>
+                                        <span class="o">&lt;</span>
+                                        <span class="nt">a</span>
+                                        <span class="nt">href</span>
+                                        <span class="o">=</span>
+                                        <span class="s2">"#"</span>
+                                        <span class="o">&gt;</span>
+                                        <span class="o">&lt;</span>
+                                        <span class="nt">span</span>
+                                        <span class="o">&gt;</span>
+                                        <span class="nt">导航栏内容</span>
+                                        <span class="o">&lt;/</span>
+                                        <span class="nt">span</span>
+                                        <span class="o">&gt;</span>
+                                        <span class="o">&lt;/</span>
+                                        <span class="nt">a</span>
+                                        <span class="o">&gt;</span>
+                                        <span class="o">&lt;/</span>
+                                        <span class="nt">li</span>
+                                        <span class="o">&gt;</span>
+                                        <span class="nt">a</span>
+                                        <span class="p">{</span>
+                                        <span class="k">margin</span>
+                                        <span class="p">:</span>
+                                        <span class="mi">100</span>
+                                        <span class="kt">px</span>
+                                        <span class="p">;</span>
+                                        <span class="k">display</span>
+                                        <span class="p">:</span>
+                                        <span class="kc">inline</span>
+                                        <span class="o">-</span>
+                                        <span class="kc">block</span>
+                                        <span class="p">;</span>
+                                        <span class="k">height</span>
+                                        <span class="p">:</span>
+                                        <span class="mi">33</span>
+                                        <span class="kt">px</span>
+                                        <span class="p">;</span>
+                                        <span class="k">background</span>
+                                        <span class="p">:</span>
+                                        <span class="nb">url</span>
+                                        <span class="p">()</span>
+                                        <span class="kc">no-repeat</span>
+                                        <span class="p">;</span>
+                                        <span class="k">padding-left</span>
+                                        <span class="p">:</span>
+                                        <span class="mi">15</span>
+                                        <span class="kt">px</span>
+                                        <span class="p">;</span>
+                                        <span class="k">color</span>
+                                        <span class="p">:</span>
+                                        <span class="mh">#fff</span>
+                                        <span class="p">;</span>
+                                        <span class="k">text-decoration</span>
+                                        <span class="p">:</span>
+                                        <span class="kc">none</span>
+                                        <span class="p">;</span>
+                                        <span class="k">line-height</span>
+                                        <span class="p">:</span>
+                                        <span class="mi">15</span>
+                                        <span class="kt">px</span>
+                                        <span class="p">;</span>
+                                        <span class="p">}</span>
+                                        <span class="nt">a</span>
+                                        <span class="nt">span</span>
+                                        <span class="p">{</span>
+                                        <span class="k">display</span>
+                                        <span class="p">:</span>
+                                        <span class="kc">inline</span>
+                                        <span class="o">-</span>
+                                        <span class="kc">block</span>
+                                        <span class="p">;</span>
+                                        <span class="k">height</span>
+                                        <span class="p">:</span>
+                                        <span class="mi">33</span>
+                                        <span class="kt">px</span>
+                                        <span class="p">;</span>
+                                        <span class="k">background</span>
+                                        <span class="p">:</span>
+                                        <span class="nb">url</span>
+                                        <span class="p">()</span>
+                                        <span class="kc">no-repeat</span>
+                                        <span class="kc">right</span>
+                                        <span class="p">;</span>
+                                        <span class="k">padding-right</span>
+                                        <span class="p">:</span>
+                                        <span class="mi">15</span>
+                                        <span class="kt">px</span>
+                                        <span class="p">;</span>
+                                        <span class="p">}</span></code>
+                                </pre>
+                            </div>
+                            <ol>
+                                <li>a设置背景左侧
+                                    <code>padding-left:15px;</code>,padding撑开合适宽度</li>
+                                <li>span设置背景右侧
+                                    <code>padding-right:15px;</code>剩下由文字自身撑开宽度</li>
+                                <li>之所以a包含span是因为
+                                    <strong>整个导航都是可以点击</strong>的</li></ol>
+                            <h3>动画(太多，系统学习参考文档)</h3>
+                            <p>CSS3中使用
+                                <code>transition</code>可以实现补间动画（过渡效果）</p>
+                            <p>语法格式：
+                                <code>transition:要过渡的属性 花费时间 运动曲线 何时开始;</code></p>
+                            <figure data-size="normal">
+                                <img class="origin_image zh-lightbox-thumb" src="https://pic3.zhimg.com/v2-bd35b0da28ec09e37f15478ef18b424a_b.jpg" width="584" data-caption="" data-size="normal" data-rawwidth="584" data-rawheight="295" data-original="https://pic3.zhimg.com/v2-bd35b0da28ec09e37f15478ef18b424a_r.jpg"></figure>
+                            <p>属性太多，看MDN文档:
+                                <a href="https://link.zhihu.com/?target=https%3A//developer.mozilla.org/zh-CN/docs/Web/CSS/transition" class=" external" target="_blank" rel="nofollow noopener noreferrer" data-za-detail-view-id="1043">
+                                    <span class="invisible">https://</span>
+                                    <span class="visible">developer.mozilla.org/z</span>
+                                    <span class="invisible">h-CN/docs/Web/CSS/transition</span></a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="comment b-a b-rad">
+                    <div class="comment-title b-b">
+                        <i class="iconfont icon-comments"></i>最新评论</div>
+                    <div class="comment-form">
+                        <textarea class="textarea b-a" name="comment" rows="3" placeholder="说点啥不？"></textarea>
+                        <input class="b-a" type="text" name="name" value="" placeholder="请输入您的邮箱">
+                        <input class="b-a" type="text" name="eamil" value="" placeholder="请输入您的邮箱">
+                        <input class="b-a" type="text" name="url" value="" placeholder="请输入您的网址">
+                        <input class="btn" type="submit" value="提交"></div>
+                    <div class="comment-list">
+                        <ul>
+                            <li class="item b-b">
+                                <div class="comment-thum">
+                                    <img src="./img/ava.jpeg" alt=""></div>
+                                <div class="comment-author">
+                                    <a href="#" title="">MENGX</a>
+                                    <span class="date">发表时间：2020-12-14</span></div>
+                                <div class="content">欢迎加入我们的大家庭！</div></li>
+                            <li class="item b-b">
+                                <div class="comment-thum">
+                                    <img src="./img/ava.jpeg" alt=""></div>
+                                <div class="comment-author">
+                                    <a href="#" title="">MENGX</a>
+                                    <span class="date">发表时间：2020-12-14</span></div>
+                                <div class="content">欢迎加入我们的大家庭！</div></li>
+                            <li class="item b-b">
+                                <div class="comment-thum">
+                                    <img src="./img/ava.jpeg" alt=""></div>
+                                <div class="comment-author">
+                                    <a href="#" title="">MENGX</a>
+                                    <span class="date">发表时间：2020-12-14</span></div>
+                                <div class="content">欢迎加入我们的大家庭！</div></li>
+                            <li class="item b-b">
+                                <div class="comment-thum">
+                                    <img src="./img/ava.jpeg" alt=""></div>
+                                <div class="comment-author">
+                                    <a href="#" title="">MENGX</a>
+                                    <span class="date">发表时间：2020-12-14</span></div>
+                                <div class="content">欢迎加入我们的大家庭！</div></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="posts-side fr b-a b-rad">
+                <div class="widget b-a b-rad">
+                    <div class="widget-title b-b">热门文章</div>
+                    <ul>
+                        <li class="item">
+                            <div class="widget-thum">
+                                <img src="./img/log.png" alt=""></div>
+                            <div class="widget-info">
+                                <div class="widget-info-title">
+                                    <a href="" title="">PHP7开发入门到放弃</a></div>
+                                <div class="widget-info-des">13 REPLIES ，7047 VIEWS</div></div>
+                        </li>
+                        <li class="item">
+                            <div class="widget-thum">
+                                <img src="./img/log.png" alt=""></div>
+                            <div class="widget-info">
+                                <div class="widget-info-title">
+                                    <a href="" title="">PHP7开发入门到放弃</a></div>
+                                <div class="widget-info-des">13 REPLIES ，7047 VIEWS</div></div>
+                        </li>
+                        <li class="item">
+                            <div class="widget-thum">
+                                <img src="./img/log.png" alt=""></div>
+                            <div class="widget-info">
+                                <div class="widget-info-title">
+                                    <a href="" title="">PHP7开发入门到放弃</a></div>
+                                <div class="widget-info-des">13 REPLIES ，7047 VIEWS</div></div>
+                        </li>
+                        <li class="item">
+                            <div class="widget-thum">
+                                <img src="./img/log.png" alt=""></div>
+                            <div class="widget-info">
+                                <div class="widget-info-title">
+                                    <a href="" title="">PHP7开发入门到放弃</a></div>
+                                <div class="widget-info-des">13 REPLIES ，7047 VIEWS</div></div>
+                        </li>
+                        <li class="item">
+                            <div class="widget-thum">
+                                <img src="./img/log.png" alt=""></div>
+                            <div class="widget-info">
+                                <div class="widget-info-title">
+                                    <a href="" title="">PHP7开发入门到放弃</a></div>
+                                <div class="widget-info-des">13 REPLIES ，7047 VIEWS</div></div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="widget b-a b-rad">
+                    <div class="widget-title b-b">热门文章</div>
+                    <ul>
+                        <li class="item">
+                            <div class="widget-thum">
+                                <img src="./img/log.png" alt=""></div>
+                            <div class="widget-info">
+                                <div class="widget-info-title">
+                                    <a href="" title="">PHP7开发入门到放弃</a></div>
+                                <div class="widget-info-des">13 REPLIES ，7047 VIEWS</div></div>
+                        </li>
+                        <li class="item">
+                            <div class="widget-thum">
+                                <img src="./img/log.png" alt=""></div>
+                            <div class="widget-info">
+                                <div class="widget-info-title">
+                                    <a href="" title="">PHP7开发入门到放弃</a></div>
+                                <div class="widget-info-des">13 REPLIES ，7047 VIEWS</div></div>
+                        </li>
+                        <li class="item">
+                            <div class="widget-thum">
+                                <img src="./img/log.png" alt=""></div>
+                            <div class="widget-info">
+                                <div class="widget-info-title">
+                                    <a href="" title="">PHP7开发入门到放弃</a></div>
+                                <div class="widget-info-des">13 REPLIES ，7047 VIEWS</div></div>
+                        </li>
+                        <li class="item">
+                            <div class="widget-thum">
+                                <img src="./img/log.png" alt=""></div>
+                            <div class="widget-info">
+                                <div class="widget-info-title">
+                                    <a href="" title="">PHP7开发入门到放弃</a></div>
+                                <div class="widget-info-des">13 REPLIES ，7047 VIEWS</div></div>
+                        </li>
+                        <li class="item">
+                            <div class="widget-thum">
+                                <img src="./img/log.png" alt=""></div>
+                            <div class="widget-info">
+                                <div class="widget-info-title">
+                                    <a href="" title="">PHP7开发入门到放弃</a></div>
+                                <div class="widget-info-des">13 REPLIES ，7047 VIEWS</div></div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="widget b-a b-rad">
+                    <div class="widget-title b-b">热门文章</div>
+                    <ul>
+                        <li class="item">
+                            <div class="widget-thum">
+                                <img src="./img/log.png" alt=""></div>
+                            <div class="widget-info">
+                                <div class="widget-info-title">
+                                    <a href="" title="">PHP7开发入门到放弃</a></div>
+                                <div class="widget-info-des">13 REPLIES ，7047 VIEWS</div></div>
+                        </li>
+                        <li class="item">
+                            <div class="widget-thum">
+                                <img src="./img/log.png" alt=""></div>
+                            <div class="widget-info">
+                                <div class="widget-info-title">
+                                    <a href="" title="">PHP7开发入门到放弃</a></div>
+                                <div class="widget-info-des">13 REPLIES ，7047 VIEWS</div></div>
+                        </li>
+                        <li class="item">
+                            <div class="widget-thum">
+                                <img src="./img/log.png" alt=""></div>
+                            <div class="widget-info">
+                                <div class="widget-info-title">
+                                    <a href="" title="">PHP7开发入门到放弃</a></div>
+                                <div class="widget-info-des">13 REPLIES ，7047 VIEWS</div></div>
+                        </li>
+                        <li class="item">
+                            <div class="widget-thum">
+                                <img src="./img/log.png" alt=""></div>
+                            <div class="widget-info">
+                                <div class="widget-info-title">
+                                    <a href="" title="">PHP7开发入门到放弃</a></div>
+                                <div class="widget-info-des">13 REPLIES ，7047 VIEWS</div></div>
+                        </li>
+                        <li class="item">
+                            <div class="widget-thum">
+                                <img src="./img/log.png" alt=""></div>
+                            <div class="widget-info">
+                                <div class="widget-info-title">
+                                    <a href="" title="">PHP7开发入门到放弃</a></div>
+                                <div class="widget-info-des">13 REPLIES ，7047 VIEWS</div></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <footer class="footer">
+            <div class="footer-content w-1200 m-auto">
+                <div class="fl">
+                    <p>EduWork 是智校云旗下专注程序员培养的实习平台。</p>
+                    <ul>
+                        <li>
+                            <a href="">关于我们</a></li>
+                        <li>
+                            <a href="">联系我们</a></li>
+                        <li>
+                            <a href="">加入我们</a></li>
+                        <li>
+                            <a href="">学习猿地</a></li>
+                    </ul>
+                    <p class="copyright">©2018-2020 北京智校云网络科技有限公司 版权所有 京ICP备19057319号-1</p></div>
+                <div class="footer-code fr">
+                    <img src="https://www.eduwork.cn/images/qrcode.png" alt=""></div>
+            </div>
+        </footer>
+    </body>
+
+</html>
